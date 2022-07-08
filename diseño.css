@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+    box-sizing: border-box;
+    margin: -3px;
+    padding: 0;
+    background-color: #e8edf3;
+}
+
+li, a, button {
+    font-family: "Monserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #040f1b;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169,0.8);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex: 20%;
+    background-color: #e1ebf7;
+    padding: 80px;
+    padding-left: 90px;
+}
+
+.slider {
+    margin: auto;
+    flex: 50%;
+    background-color: #edf0f1;
+    justify-content: center;
+    text-align : center;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    width: 390%;  
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider li {
+    width: 100%;   
+    list-style: none;    
+}
+
+.slider img {
+    object-fit: cover;
+    width:40%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+p {
+    font-family:'Courier New', sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    font-family:'Comic Sans MS', sans-serif;
+    font-size: 35px;
+}
+
+h3 {
+    font-family:'Comic Sans MS', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.bt-row {
+    margin-left: 0;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(247, 212, 15);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.row-medio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.as-medio {
+    flex: 30%;
+    background-color: rgb(255, 255, 248);
+    padding: 90px;
+    text-align: left;
+    text-align: justify;
+}
+
+.sc-medio {
+    flex: 20%;
+    background-color: rgb(255, 255, 248);
+    padding: 100px;
+    text-align : center;
+}
+
+.p-med {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+}
+
+.p-bor {
+    width: 140px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(247, 212, 15);
+}
+
+.p-redo {
+    width: 90px;
+    padding: 10px 40px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(247, 212, 15);
+}
+
+#about {
+    padding-top: 170px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: rgb(3, 71, 83);    
+}
+.f-wrap {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+}
+
+.row-services {
+    margin-top: -30px;
+    text-align: center;
+    background-color: #edf0f1;
+}
+
+#services{
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(3, 71, 83);    
+}
+
+#detalle-services{
+    font-family: 'Times New Roman', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 5cm;
+    padding-right: 5cm;
+    text-align:center;
+}
+
+.gridd {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    background-color: #edf0f1;
+    grid-template-rows: 375px 350px;
+    padding-top: 40px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.text-card {
+    padding-top: 40px;
+    background: rgba(0, 0, 0, .4);
+    padding-bottom: 101px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.text-card h2 {
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(255, 255, 255, .8);
+}
+
+.text-card p {
+    font-family: 'Times New Roman', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    color: rgba(255, 255, 255, .8);
+}
+
+.card:hover .text-card {
+    opacity: 1;
+}
+
+.card {
+    width: 350px;
+    max-height: 300px;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--i);
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 3px 5px 5px rgba(2, 12, 19, 0.8);
+}
+
+footer{
+    background:rgb(24, 23, 23);
+    height: auto;
+    font-family: "Open Sans";
+    padding-top: 25px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    padding-left: 35px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    padding-left: 35px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4 ease;
+}
+
+.socials a:hover i {
+    color: #0088a9;
+}
+
+.footer-bottom{
+    background: rgb(0, 0, 0);
+    width: 98.1vw;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .6;
+    font-weight: 200;
+}
